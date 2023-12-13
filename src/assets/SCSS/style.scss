@@ -1,5 +1,30 @@
-* {
+@font-face {
   font-family: Montserrat;
+  src: url(/src/assets/fonts/Montserrat-Regular.eot);
+  src: url(/src/assets/fonts/Montserrat-Regular.eot?#iefix) format('embedded-opentype'),url(/src/assets/fonts/Montserrat-Regular.woff2) format('woff2'),url(/src/assets/fonts/Montserrat-Regular.woff) format('woff'),url(/src/assets/fonts/Montserrat-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/src/assets/fonts/Montserrat-Bold.eot);
+  src: url(/src/assets/fonts/Montserrat-Bold.eot?#iefix) format('embedded-opentype'),url(/src/assets/fonts/Montserrat-Bold.woff2) format('woff2'),url(/src/assets/fonts/Montserrat-Bold.woff) format('woff'),url(/src/assets/fonts/Montserrat-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-display: block
+}
+
+:root {
+  --light-background-contrast: #140132;
+  --light-background-primary: #FCFCFD;
+  --dark-text-disabled: #5E636E;
+  --cyan-1FFC2: #01FFC2;
+  --dark-background-secondary: rgba(113, 86, 253, 0.20);
+}
+
+
+* {
+  font-family: Montserrat, serif;
 }
 
 body {
@@ -39,17 +64,13 @@ header {
         text-decoration: none;
         color: var(--dark-text-disabled, #5E636E);
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
       }
 
       .nav-menu-item.selected a {
         color: var(--cyan-1FFC2, #01FFC2);
         font-size: 16px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
       }
     }
 
@@ -74,9 +95,7 @@ header {
         .currency-name {
           color: #E5F7FF;
           font-size: 8px;
-          font-style: normal;
           font-weight: 400;
-          line-height: normal;
         }
 
         .currensy-val-wrap {
@@ -87,9 +106,7 @@ header {
           .currency-val {
             color: #FFF;
             font-size: 16px;
-            font-style: normal;
             font-weight: 700;
-            line-height: normal;
           }
 
           img {
@@ -116,9 +133,7 @@ header {
 
         color: var(--dark-text-disabled, #5E636E);
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         cursor: pointer;
       }
     }
@@ -135,7 +150,6 @@ header {
 
 .big-text {
   font-size: 26px;
-  font-style: normal;
   font-weight: 400;
   line-height: 38px;
 
@@ -146,7 +160,6 @@ header {
 
 .small-text {
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 33px;
 
@@ -198,7 +211,6 @@ header {
         width: 333px;
         color: #FFF;
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
         line-height: 28px;
       }
@@ -209,14 +221,11 @@ header {
 
       .text {
         font-size: 56px;
-        font-style: normal;
         font-weight: 900;
-        line-height: normal;
       }
 
       .sub-text {
         font-size: 26px;
-        font-style: normal;
         font-weight: 700;
         line-height: 38px;
       }
@@ -248,9 +257,7 @@ header {
 
     .sub-block-header {
       font-size: 72px;
-      font-style: normal;
       font-weight: 900;
-      line-height: normal;
     }
   }
 
@@ -272,9 +279,8 @@ header {
 
     .line-text {
       font-size: 26px;
-      font-style: normal;
       font-weight: 700;
-      line-height: 38px; /* 146.154% */
+      line-height: 38px;
     }
   }
 
@@ -307,7 +313,6 @@ header {
     .num {
       color: var(--dark-background-secondary, rgba(113, 86, 253, 0.20));
       font-size: 100px;
-      font-style: normal;
       font-weight: 900;
       line-height: 80px;
     }
@@ -372,7 +377,6 @@ header {
         background: #7156FB;
         color: var(--light-background-primary, #FCFCFD);
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
         margin-right: 119px;
         cursor: pointer;

@@ -24,26 +24,25 @@ module.exports = {
                 ],
             },
             {
-                // To use images on pug files:
                 test: /\.(png|jpg|jpeg|ico|svg|webp)/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/img/[name].[hash:8][ext]'
                 }
             },
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext][query]'
+                }
+            }
         ],
     },
 
     plugins: [
-        // new CopyWebpackPlugin([
-        //     { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-        //     { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-        //     { from: `${PATHS.src}/static`, to: '' },
-        // ]),
-
         new PugPlugin({
             pretty: true,
-            //☝🏽 Format HTML (only in dev mode)
             css: {
                 filename: 'assets/css/[name].[contenthash:8].css'
             }
