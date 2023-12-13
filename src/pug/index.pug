@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+    head
+        title GameFi
+        link(href=require('../assets/SCSS/style.scss') rel='stylesheet')
+
+    body
+        block content
+            include ./components/header
+            .content
+                include ./components/top-block
+                include ./components/main-block
+                include ./components/bottom-block

@@ -1,0 +1,65 @@
+extends base.pug
+block content
+    mixin paragraph(num, text, subtext)
+        .paragraph
+            .num=num
+            .big-text!=text
+            if subtext
+                .small-text!=subtext
+
+    -
+        var paragraphs = [
+            {t: 'Sign-up and get</br>your free <span class="green-text">NFT glasses</span>', s: ''},
+            {t: 'Watch the feed</br>and get the boxes</br><span class="green-text">with LEE tokens</span>', s: ''},
+            {
+                t: 'Buy your NFT glasses and get <span class="green-text">LEE tokens</span> directly when watching the feed',
+                s: 'The higher the rarity </br>of your <span class="green-text">NFT glasses</span></br>the more points you get</br>when leveling them </br>up – the more tokens</br>you can earn'
+            },
+            {
+                t: 'Upgrade your</br><span class="green-text">NFT glasses</span>', s: ''
+            },
+            {
+                t: 'Buy additional</br><span class="green-text">NFT glasses</span></br>to increase the amount of Attention</br>and rewarded time</br>of watching the feed', s: '1 Attention = <span>10 minutes</span> of rewarded feed viewing'
+            },
+        ]
+
+    .main-block
+        .sub-block.mission
+            .sub-block-header #[span.green-text Cheelee’s] mission
+
+            .two-columns.big-text
+                .col Users spend an average of 2.5 hours daily on social networks and get nothing fоr it. We believe that this is unfair
+                .col #[span Our mission] is to provide everyone with the opportunity to monetize time in social networks
+            .line-text #[span.green-text Cheelee] works within the "Attention Economy" framework
+            .two-columns.small-text
+                .col Other social media consider a user as an information and advertising influence target, #[span but a Cheelee user is a full system member, partner and beneficiary] </br>#[span The Attention Economy] sees human attention as a scarce commodity making it a new oil! The founder of this concept is the Nobel laureate Herbert Simon
+                .col The main idea is that attention is converted into income with digital platforms. You pay your attention to what you want, and get paid for it. Your attention has a certain cost. </br>Through the GameFi mechanics, Cheelee’s users earn together with the platform by converting their attention into money
+
+        .sub-block.glasses
+            .tree-columns
+                .col
+                    +paragraph(1, paragraphs[0].t, paragraphs[0].s)
+                .col
+                    +paragraph(2, paragraphs[1].t, paragraphs[1].s)
+                .col
+                    +paragraph(3, paragraphs[2].t, paragraphs[2].s)
+                    +paragraph(4 ,paragraphs[3].t, paragraphs[3].s)
+                    +paragraph(5 ,paragraphs[4].t, paragraphs[4].s)
+            +retinaImg('glasses')
+            - var img = require(`../../assets/img/ntn.png`)
+            img.ntn(src=img alt='NTN')
+
+        .sub-block.boxes
+            .sub-block-header Watch the videos and #[span.green-text get the boxes]
+            .small-text While watching the feed you can get boxes </br> with NFT or LEE tokens
+            +retinaImg('box')
+
+        .sub-block.subtract
+            img.border(src=require(`../../assets/img/subtract.svg`))
+            .subtract-fill
+                img.arrow(src=require(`../../assets/img/subtract-arrow.svg`))
+                img.arrow-bottom(src=require(`../../assets/img/subtract-arrow-bottom.svg`))
+                .big-text Don’t miss the #[span.green-text Presale]
+                .buy-button Buy NFT glasses
+
+

@@ -1,0 +1,7 @@
+block globalMixins
+    mixin retinaImg(name)
+        - var bigImg = require(`../../assets/img/${name}@2x.webp`)
+        - var img = require(`../../assets/img/${name}.webp`)
+        img(src=img srcset=`${img} 1x, ${bigImg} 2x` alt=`${name}`)
+
+block content

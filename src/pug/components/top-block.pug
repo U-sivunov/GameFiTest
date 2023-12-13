@@ -1,0 +1,33 @@
+extends base.pug
+block content
+    mixin linkButton(name, href, onlyIcon)
+        a(href=href)
+        if onlyIcon
+            .link-button-wrap
+                img(src=require(`../../assets/img/${name}-icon.svg`), alt=`${name}`)
+        else
+            img.link-button(src=require(`../../assets/img/${name}-icon.svg`), alt=`${name}`)
+
+    -
+        var socialLinks = [
+            {n: 'twitch', l: '#'},
+            {n: 'telegram', l: '#'},
+            {n: 'twitter', l: '#'},
+            {n: 'facebook', l: '#'},
+            {n: 'instagram', l: '#', onlyIcon: true},
+            {n: 'ooo', l: '#'},
+        ]
+
+    .top-block
+        +retinaImg('top-block-img')
+        .left-block
+            .google-block
+                +linkButton('google','#',true)
+
+                .google-text Pre-registration in Google Play
+            .text-block
+                .text GameFi short video #[span.green-text platform]
+                .sub-text Watch. Play. Earn
+        .right-block
+            for el in socialLinks
+                +linkButton(el.n,el.l,el.onlyIcon)

@@ -1,0 +1,27 @@
+<svg width="36" height="18" viewBox="0 0 36 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="36" height="18" fill="#F5F5F5"/>
+<g id="screen-4" clip-path="url(#clip0_0_1)">
+<rect width="1512" height="4337" transform="translate(-425 -3357)" fill="#140132"/>
+<g id="Frame 336446">
+<g id="Group 34131">
+<path id="Rectangle 476" d="M-346 49C-346 26.9086 -328.091 9 -306 9H968C990.091 9 1008 26.9086 1008 49V156C1008 178.091 990.091 196 968 196H-306C-328.091 196 -346 178.091 -346 156V49Z" fill="url(#paint0_linear_0_1)" fill-opacity="0.2"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M44 10H968C989.539 10 1007 27.4609 1007 49V156C1007 177.539 989.539 195 968 195H918V196H968C990.091 196 1008 178.091 1008 156V49C1008 26.9086 990.091 9 968 9H44V10ZM-256 10V9H-306C-328.091 9 -346 26.9086 -346 49V156C-346 178.091 -328.091 196 -306 196H618V195H-306C-327.539 195 -345 177.539 -345 156V49C-345 27.4609 -327.539 10 -306 10H-256Z" fill="#7156FB"/>
+<path id="Rectangle 477" d="M668 195.5H918M-256 9.5H-6" stroke="#7156FB" stroke-dasharray="2 2"/>
+<g id="Group 336264">
+<path id="Vector" d="M29.5207 9.80426e-07L36 1.90735e-06L30.4863 9.00407L36 18L29.5207 18L24 9.00407L29.5207 9.80426e-07Z" fill="#7156FB"/>
+<path id="Vector_2" d="M17.5137 9.79424e-07L24 1.90735e-06L18.4793 9.00407L24 18L17.5137 18L12 9.00407L17.5137 9.79424e-07Z" fill="#7156FB" fill-opacity="0.7"/>
+<path id="Vector_3" d="M5.5137 9.79424e-07L12 1.90735e-06L6.48629 9.00407L12 18L5.5137 18L-1.57407e-06 9.00407L5.5137 9.79424e-07Z" fill="#7156FB" fill-opacity="0.3"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="331" y1="9" x2="331" y2="196" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7156FB"/>
+<stop offset="1" stop-color="#FF0DFF"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1512" height="4337" fill="white" transform="translate(-425 -3357)"/>
+</clipPath>
+</defs>
+</svg>

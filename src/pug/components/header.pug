@@ -1,0 +1,35 @@
+-
+    var headerLinks = [
+        {n:'About us',l:'#'},
+        {n:'Roadmap',l:'#'},
+        {n:'Documents',l:'#'},
+        {n:'F.A.Q',l:'#'},
+        {n:'Buy NFT glasses',l:'#', selected: true},
+    ]
+mixin currencyWidget(name, val)
+    .currency-widget
+        .currency-logo
+            img(src=require(`../../assets/img/${name}.png`), alt=`${name}`)
+        .currency-content
+            .currency-name=name
+            .currensy-val-wrap
+                .currency-val=val.toFixed(2)
+                img(src=require(`../../assets/img/currency-up.svg`), alt="Up")
+                //svg
+                //    use(xlink:href=require(`../../assets/img/currency-up.svg`))
+header
+    .container
+        .logo
+            img(src=require(`../../assets/img/logo.svg`), alt="Logo")
+        .nav-menu
+            for el in headerLinks
+                .nav-menu-item(class=el.selected && 'selected')
+                    a(href=el.l)=el.n
+        .right-menu
+            +currencyWidget('cheel',8)
+            +currencyWidget('lee',8)
+            .certic-wrap
+                img(src=require(`../../assets/img/certic.svg`), alt="certic")
+            .lang-menu
+                p EN
+                img(src=require(`../../assets/img/lang-arrow.svg`), alt="certic")
